@@ -1,0 +1,29 @@
+{
+  "name": "liberaldemocrats",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "dev": "start-storybook -p 5555",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/addon-storysource": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "lerna": "^3.16.4",
+    "react": "^16.9.0",
+    "sass-loader": "^7.2.0",
+    "webpack": "^4.39.2"
+  }
+}

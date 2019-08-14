@@ -1,0 +1,91 @@
+$primary: #FAA61A !default;
+$secondary: #151721 !default;
+
+.container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 33.3333%;
+    position: relative;
+    overflow: hidden;
+}
+
+.Triangles{
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    height: 100%;
+    &.right{
+        right:0;
+    }
+    &.left{
+        left:0;
+    }
+    &.center{
+        left: 50%;
+        margin-left: -15%;
+    }
+}  
+
+
+.triangleUp{
+    position: absolute;
+    top:0;
+    animation: triangleUp;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
+}
+
+.triangleDown{
+    position: absolute;
+    animation: triangleDown;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
+}
+
+.bar{
+    position: absolute;
+    animation: barIn;
+    animation-iteration-count: 1;
+    animation-duration: 0.2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+.bottomContent{
+    position: absolute;
+    width: 12%;
+    bottom: 10%;
+    left: 7%;
+    animation: bottomIn;
+    animation-iteration-count: 1;
+    animation-duration: 0.7s;
+    animation-delay: 1.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes triangleDown {
+    from {transform: translateY(-100%)}
+    to {transform: translateY(0%)}
+  }
+
+  @keyframes triangleUp {
+    from {transform: translateY(100%)}
+    to {transform: translateY(0%)}
+  }
+
+  @keyframes barIn {
+    from {transform: translate3d(-57%, -98%,0)}
+    to {transform: translate3d(0,0,0); opacity: 1;}
+  }
+
+  @keyframes bottomIn {
+    from {}
+    to {opacity: 1;}
+  }
+

@@ -1,0 +1,20 @@
+$primary: #FAA61A !default;
+$secondary: #151721 !default;
+
+.flag{
+    background: $primary;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+    position: relative;
+    svg{
+        width: 100%;
+        position: absolute;
+        bottom:5%;
+    }
+}
+
+.alternative{
+    background: $secondary;
+    svg path{
+        fill: #fff;
+    }
+}       
