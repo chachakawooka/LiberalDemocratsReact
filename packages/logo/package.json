@@ -1,6 +1,6 @@
 {
     "name": "@liberaldemocrats/logo",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "lib/index.js",
     "module": "src/index.js",
     "dependencies": {
@@ -10,5 +10,6 @@
     "peerDependencies": {
         "react": "^15.0.0 || ^16.0.0",
         "react-dom": "^15.0.0 || ^16.0.0"
-    }
+    },
+    "gitHead": "ff84eac549138c4d7b45ce59f6a7f8e4d8862467"
 }
