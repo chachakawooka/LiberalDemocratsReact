@@ -1,6 +1,6 @@
 {
     "name": "@liberaldemocrats/logo",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publishConfig": {
         "access": "public"
     },
@@ -14,5 +14,5 @@
         "react": "^15.0.0 || ^16.0.0",
         "react-dom": "^15.0.0 || ^16.0.0"
     },
-    "gitHead": "bfb3ae41389b79f57fa223dc75982d232527d43a"
+    "gitHead": "656c978a0bd07443dc30b3f8a718c77a5cf46d81"
 }

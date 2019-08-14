@@ -1,13 +1,13 @@
 {
     "name": "@liberaldemocrats/triangles",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "lib/index.js",
     "module": "src/index.js",
     "publishConfig": {
         "access": "public"
     },
     "dependencies": {
-        "@liberaldemocrats/logo": "^1.0.3",
+        "@liberaldemocrats/logo": "^1.0.4",
         "react": "16.9.0",
         "react-dom": "16.9.0"
     },
@@ -15,5 +15,5 @@
         "react": "^15.0.0 || ^16.0.0",
         "react-dom": "^15.0.0 || ^16.0.0"
     },
-    "gitHead": "bfb3ae41389b79f57fa223dc75982d232527d43a"
+    "gitHead": "656c978a0bd07443dc30b3f8a718c77a5cf46d81"
 }
