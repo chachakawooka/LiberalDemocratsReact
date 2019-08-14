@@ -1,13 +1,13 @@
 {
     "name": "@liberaldemocrats/triangles",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "lib/index.js",
     "module": "src/index.js",
     "publishConfig": {
         "access": "public"
     },
     "dependencies": {
-        "@liberaldemocrats/logo": "^1.0.2",
+        "@liberaldemocrats/logo": "^1.0.3",
         "react": "16.9.0",
         "react-dom": "16.9.0"
     },
