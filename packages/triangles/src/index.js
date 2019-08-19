@@ -7,8 +7,10 @@ class Triangles extends Component {
 
     render() {
         return (
-            <div className={styles.container} style={{ backgroundImage: "url(" + this.props.background + ")" }}>
-
+            <div className={styles.container}>
+                <div className={styles.background}>
+                {this.props.background}
+                </div>
                 <svg className={styles.Triangles} viewBox="0 0 285 330" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className={styles.triangleUp} d="M126.809 77.5L253.5 329.5H0L126.809 77.5Z" fill="#FAA61A" />
                     <path className={styles.triangleDown} d="M155.098 133L86.5 -0.499975L222 -0.499992L155.098 133Z" fill="#151721" />
