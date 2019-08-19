@@ -9023,6 +9023,13 @@ react-hotkeys@2.0.0-pre4:
   dependencies:
     prop-types "^15.6.1"
 
+react-image@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-image/-/react-image-2.2.0.tgz#d0fa05b098b6d55ccb5917d89310c0dfdec2968b"
+  integrity sha512-MXPNjcczXXN/2KRTV8tHV3D5fjc+QG7YIxULTQTWsN0o7anLae+igVUEYMjsP3jiuZxUoInVBvPy+p7woeOCSg==
+  dependencies:
+    prop-types "15.7.2"
+
 react-input-autosize@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-input-autosize/-/react-input-autosize-2.2.1.tgz#ec428fa15b1592994fb5f9aa15bb1eb6baf420f8"

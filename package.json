@@ -1,6 +1,6 @@
 {
   "name": "liberaldemocrats",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -25,6 +25,7 @@
     "lerna": "^3.16.4",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
+    "react-image": "^2.2.0",
     "sass-loader": "^7.2.0",
     "webpack": "^4.39.2"
   }
