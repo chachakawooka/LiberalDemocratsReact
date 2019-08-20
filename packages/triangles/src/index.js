@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import styles from './index.module.scss'
-import { background } from '@storybook/theming';
-import url from '@storybook/api/dist/modules/url';
-
+import styles from '../index.module.scss'
 class Triangles extends Component {
 
     render() {

@@ -7,11 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _indexModule = _interopRequireDefault(require("./index.module.scss"));
-
-var _theming = require("@storybook/theming");
-
-var _url = _interopRequireDefault(require("@storybook/api/dist/modules/url"));
+var _indexModule = _interopRequireDefault(require("../index.module.scss"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 

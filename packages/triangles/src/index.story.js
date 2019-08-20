@@ -5,7 +5,7 @@ import Triangles from '.';
 
 import Image from 'react-image';   
 
-import swinson from './storyimg/swinson.jpg'
+import swinson from '../storyimg/swinson.jpg'
 const hero = (<Image
     src={swinson}
 />);
