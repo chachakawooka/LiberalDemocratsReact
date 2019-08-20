@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import styles from './index.module.scss'
+import styles from '../index.module.scss'
 
-import federal from './images/federal.svg'
-import noStrap from './images/no-strap.svg'
-import Welsh from './images/welsh.svg'
-import Scottish from './images/scottish.svg'
+import federal from '../images/federal.svg'
+import noStrap from '../images/no-strap.svg'
+import Welsh from '../images/welsh.svg'
+import Scottish from '../images/scottish.svg'
 
 class Logo extends Component {
 
