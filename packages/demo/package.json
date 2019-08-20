@@ -1,6 +1,6 @@
 {
     "name": "@liberaldemocrats/demo",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publishConfig": {
         "access": "public"
     },
@@ -9,7 +9,7 @@
     "dependencies": {
         "@liberaldemocrats/card": "^1.0.2",
         "@liberaldemocrats/logo": "^1.0.5",
-        "@liberaldemocrats/triangles": "^1.0.6",
+        "@liberaldemocrats/triangles": "^1.0.7",
         "react": "16.9.0",
         "react-dom": "16.9.0"
     },
