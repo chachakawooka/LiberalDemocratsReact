@@ -1,15 +1,15 @@
 {
     "name": "@liberaldemocrats/demo",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publishConfig": {
         "access": "public"
     },
     "main": "lib/index.js",
     "module": "src/index.js",
     "dependencies": {
-        "@liberaldemocrats/card": "^1.0.1",
-        "@liberaldemocrats/logo": "^1.0.4",
-        "@liberaldemocrats/triangles": "^1.0.5",
+        "@liberaldemocrats/card": "^1.0.2",
+        "@liberaldemocrats/logo": "^1.0.5",
+        "@liberaldemocrats/triangles": "^1.0.6",
         "react": "16.9.0",
         "react-dom": "16.9.0"
     },
