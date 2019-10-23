@@ -1,0 +1,16 @@
+{
+    "name": "@liberaldemocrats/base-styles",
+    "version": "1.0.0",
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "styles.scss",
+    "dependencies": {
+        "react": "16.9.0",
+        "react-dom": "16.9.0"
+    },
+    "peerDependencies": {
+        "react": "^15.0.0 || ^16.0.0",
+        "react-dom": "^15.0.0 || ^16.0.0"
+    }
+}

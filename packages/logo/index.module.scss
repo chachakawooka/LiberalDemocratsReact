@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import '@liberaldemocrats/base-styles';
 
 .logo{
     max-width: 100%;
@@ -8,8 +8,8 @@
     .logo__strap{
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        letter-spacing: -0.05em;
+        letter-spacing: -0.05rem;
         display: block;
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
 }

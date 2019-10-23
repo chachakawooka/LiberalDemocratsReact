@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
-
-$primary: #FAA61A !default;
-$secondary: #151721 !default;
+@import '@liberaldemocrats/base-styles';
 
 .logo{
     max-width: 300px;
 }
 
 .manifesto{
+    width:100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr) );
-    row-gap: 3em;
-    column-gap: 3em;
-    margin:3em 0em;
-    @media only screen and (min-width: 400px) {
-        margin:3em;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    column-gap: $gutter-small;
+    row-gap: $gutter-small;
+    
+    .item{
+        
     }
 }

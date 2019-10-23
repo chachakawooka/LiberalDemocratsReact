@@ -1,0 +1,239 @@
+// Breakpoints
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs;
+
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm;
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md;
+
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg;
+
+$screen-xl: 1350px !default;
+$screen-xl-min: $screen-xl;
+
+$screen-xxs-max: ($screen-xs-min - 1);
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xl-min - 1);
+
+// Colours
+
+$c-black:  #151721 !default;
+$c-white: #ffffff !default;
+$c-red: 	#fa361a !default;
+$c-yellow: #FAA61A !default;
+$c-green: #13260d !default;
+$c-dark-grey: #555 !default;
+$c-grey: #ccc !default;
+$c-light-grey: #ededed !default;
+
+$c-text-primary:  $c-black !default;
+$c-text-secondary:  $c-white !default;
+$c-primary: $c-yellow  !default;
+$c-secondary: $c-black !default;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700,900&display=swap');
+$f-family-base: 'Open Sans', sans-serif !default;
+$f-family-title: $f-family-base !default;
+$f-family-body: $f-family-base !default;
+
+$f-size-base: 18px !default;
+$f-size-xxl: calc(#{$f-size-base} * 3) !default; //48px
+$f-size-xl: calc(#{$f-size-base} * 1.5) !default; //24px
+$f-size-l: calc(#{$f-size-base} * 1.125) !default; //18px
+$f-size: $f-size-base !default;
+$f-size-s: calc(#{$f-size-base} * 0.9375) !default; //15px
+$f-size-xs: calc(#{$f-size-base} * 0.875) !default; //14px
+$f-size-xxs: calc(#{$f-size-base} * 0.75) !default; //12px
+
+$f-weight-base: 300 !default;
+$f-weight-bold: 700 !default;
+$f-weight-extra-bold: 900 !default;
+
+$line-height-base: 1.4 !default;
+
+
+//Headers
+$heading-line-height-base: 1.1 !default;
+$heading-color-base: $c-black !default;
+
+//Misc
+$margin-base: 10px !default;
+$link-color-base: $c-primary !default;
+$link-color-hover-base: $c-secondary !default;
+$selection-bg: $c-primary !default;
+$selection-fg: #fff !default;
+
+//Grid
+$gutter-small: 15px !default;
+$gutter-large: 30px !default;
+$container-width: 1260px !default;
+$block-margin-small: 50px !default;
+$block-margin-large: 80px !default;
+
+//Forms
+$c-input: $c-light-grey !default;
+$input-height: 50px !default;
+$input-font-size: $f-size !default;
+$input-padding-small: 10px !default;
+$input-padding-large: 20px !default;
+$input-border-color: $c-primary !default;
+$input-gutter: 5px !default;
+$textarea-height: 120px !default;
+$placeholder-color: $c-dark-grey;
+
+//Global Styles
+body {
+    line-height: $line-height-base;
+    font-size: $f-size;
+    font-family: $f-family-base;
+    font-weight: $f-weight-base;
+    background: #ffffff;
+    color: $c-text-primary;
+}
+
+::selection {
+    background: $selection-bg;
+    color: $selection-fg;
+    opacity: 1;
+}
+
+
+@mixin selection-alt {
+    ::selection {
+        color: $selection-bg;
+        background: $selection-fg;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: $link-color-base;
+
+    &:hover {
+        color: $link-color-hover-base;
+    }
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+p,
+ul,
+ol,
+dl {
+    margin: 0 0 $margin-base;
+}
+
+@mixin heading-default {
+    line-height: $heading-line-height-base;
+    margin: 0 0 $margin-base;
+    font-weight: $f-weight-extra-bold;
+    color: $heading-color-base;
+}
+
+@mixin h1 {
+    @include heading-default;
+    font-size: $f-size-l;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: $f-size-xxl;
+    }
+}
+
+@mixin h2 {
+    @include heading-default;
+    font-size: $f-size-xl;
+}
+
+h1 {
+    @include h1
+}
+
+h2 {
+    @include h2
+}
+
+@mixin container {
+    margin: auto;
+    width: 100%;
+    padding-left: $gutter-small;
+    padding-right: $gutter-small;
+    max-width: $container-width;
+
+    @media (min-width: $screen-xs-min) {
+        padding-right: $gutter-large;
+        padding-left: $gutter-large;
+    }
+}
+
+@mixin hide-element {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@mixin input-defaults {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: attr(data-label);
+        position: absolute;
+        right: $input-padding-large;
+        font-size: 11px;
+        color: $c-primary;
+        text-transform: uppercase;
+        font-weight: $f-weight-bold;
+        transition: all 0.3s ease;
+    }
+
+    >* {
+        width: 100%;
+        background: $c-input;
+        border: 1px solid transparent;
+        font-size: $input-font-size;
+        transition: all 0.3s ease;
+        font-family: $f-family-base;
+        box-shadow: none;
+
+        &::placeholder {
+            font-style: italic;
+            opacity: 1;
+            color: $placeholder-color;
+            font-weight: $f-weight-base;
+        }
+
+        &:focus {
+            border-color: $input-border-color;
+            color: $c-primary;
+        }
+    }
+}
+
+@mixin block-margin {
+    margin-bottom: $block-margin-small;
+
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: $block-margin-large;
+    }
+}

@@ -1,8 +1,7 @@
-$primary: #FAA61A !default;
-$secondary: #151721 !default;
+@import '@liberaldemocrats/base-styles';
 
 .flag{
-    background: $primary;
+    background: $c-primary;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
     position: relative;
     svg{
@@ -13,7 +12,7 @@ $secondary: #151721 !default;
 }
 
 .alternative{
-    background: $secondary;
+    background: $c-secondary;
     svg path{
         fill: #fff;
     }

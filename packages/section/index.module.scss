@@ -1,0 +1,62 @@
+@import '@liberaldemocrats/base-styles';
+
+.section {
+    width:100%;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    
+    .title{
+        width:100%;
+    }
+
+    .section{
+        width:100%;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .title {
+            width: 30%;
+            padding:1%;
+            height: auto;
+        }
+    
+        .sectionData {
+            width: 70%;
+            padding:1%;
+            height: auto;
+        }
+    }
+
+
+    h1 {
+        padding-bottom: $margin-base;
+        border-bottom: $margin-base solid #faa61a;
+        margin-top: $gutter-small;
+        text-align: center;
+
+        @media (min-width: $screen-sm-min) {
+            margin-top:0;
+            text-align: left;
+            padding-bottom: 0;
+            border-bottom: none;
+            padding-left: $margin-base;
+            border-left: $margin-base solid #faa61a;
+        }
+    }
+
+    &.flipped{
+        flex-flow: row-reverse;
+        h1{
+            @media (min-width: $screen-sm-min) {
+                text-align: right;
+                padding-left: 0;
+                border-left: none;
+                padding-right: $margin-base;
+                border-right: $margin-base solid #faa61a;
+            }
+        }
+    }
+}
+

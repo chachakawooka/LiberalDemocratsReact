@@ -1,32 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import '@liberaldemocrats/base-styles';
 
-$primary: #FAA61A !default;
-$secondary: #151721 !default;
-
-@mixin triangle($size, $color) {
-
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: $size $size 0 0;
-    border-color: $color transparent transparent transparent;
-    transition: border-width 0.5s;
-}
-
-@mixin triangle-inverse($size, $color) {
-
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 0 $size;
-    border-color: transparent transparent $color transparent;
-    transition: border-width 0.5s;
-}
 
 .card {
     cursor: pointer;
     position: relative;
-    background: $primary;
+    background: $c-primary;
     color: #000;
     box-shadow: 0 3px 15px rgba(#000, 0.2);
     border-radius: 10px;
@@ -35,41 +13,13 @@ $secondary: #151721 !default;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.2fr;
-    grid-template-areas: "IMAGE" "BUTTON";
-
-    &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-width: 40em 0 0 0;
-        z-index: 2;
-    }
-
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-
-        @include triangle-inverse(20em, rgba($secondary, 0.9));
-        border-width: 0 0 0px 0px;
-        z-index: 2;
-    }
+    grid-template-areas: "IMAGE""BUTTON";
 
     &:hover {
-        &:before {
-            @include triangle(20em, rgba($primary, 0.7));
-        }
-
-        &:after {
-            border-width: 0 0 17em 45em;
-        }
 
         .card__info {
             opacity: 1;
@@ -77,14 +27,29 @@ $secondary: #151721 !default;
         }
 
         .card__image {
-            img {
+            &:before {
+                top: -200%;
+                left: -200%;
+                bottom: -100%;
+                right: 80%;
+            }
 
+            &:after {
+                top: -100%;
+                left: 50%;
+                bottom: -200%;
+                right: -129%;
+            }
+
+            img {
+                filter: blur(2px);
             }
         }
-        .cart__cta{
-            a{
-                background: $secondary;
-                color:#fff;
+
+        .cart__cta {
+            a {
+                background: $c-secondary;
+                color: #fff;
             }
         }
     }
@@ -94,36 +59,55 @@ $secondary: #151721 !default;
         position: relative;
         grid-area: IMAGE;
 
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -200%;
+            left: -200%;
+            bottom: 100%;
+            right: 100%;
+            background: rgba($c-primary, 0.6);
+            z-index: 2;
+            transform: rotate(30deg);
+            transition: .2s ease;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            bottom: -200%;
+            right: -200%;
+            background: rgba($c-secondary, 0.9);
+            z-index: 2;
+            transform: rotate(60deg);
+            transition: .2s ease;
+        }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 30%;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
-        }
     }
 
     &__info {
         grid-area: IMAGE;
         z-index: 5;
         align-self: end;
-        margin: 0px 20px;
+        margin: 0px $gutter-small;
         color: #fff;
         text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
         opacity: 0;
         text-align: right;
 
         h3 {
-            font-size: 1.5em;
-            margin: 0.5em;
+            font-size: $f-size-l;
         }
     }
 
@@ -139,10 +123,9 @@ $secondary: #151721 !default;
             text-align: center;
             display: inline-block;
             border: none;
-            font: 1em "Open Sans", sans-serif;
             font-weight: 700;
-            padding: 10px;
-            background: $primary;
+            padding: $gutter-small;
+            background: $c-primary;
             color: #000;
             position: relative;
             top: 0;
