@@ -2,31 +2,11 @@ import React, { Component } from 'react'
 import styles from '../index.module.scss'
 
 class Card extends Component {
-
-    state = {
-        width: null,
-        heigh: null
-    };
-
-    componentDidMount() {
-        this.setState({
-          dimensions: {
-            width: this.container.offsetWidth,
-            height: this.container.offsetHeight,
-          },
-        });
-      }
-
     
     render() {
-        const style = {
-            '::after': {
-                background: 'red'
-            }
-        };
 
         return (
-            <div className={styles.card} onClick={this.props.onClick} style={style} ref={el => (this.container = el)}>
+            <div className={styles.card} onClick={this.props.onClick}>
                 <div className={styles.card__image}>
                     {this.props.img}
                 </div>

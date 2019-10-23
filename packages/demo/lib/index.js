@@ -15,6 +15,8 @@ var _logo = _interopRequireDefault(require("@liberaldemocrats/logo"));
 
 var _triangles = _interopRequireDefault(require("@liberaldemocrats/triangles"));
 
+var _section = _interopRequireDefault(require("@liberaldemocrats/section"));
+
 var _card = _interopRequireDefault(require("@liberaldemocrats/card"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -66,8 +68,12 @@ function (_Component) {
         bottom: _react["default"].createElement(_logo["default"], {
           strap: "DEMAND BETTER"
         })
-      }), _react["default"].createElement("div", {
+      }), _react["default"].createElement(_section["default"], {
+        title: "Demand Better For Britain"
+      }, _react["default"].createElement("div", {
         className: _indexModule["default"].manifesto
+      }, _react["default"].createElement("div", {
+        className: _indexModule["default"].item
       }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13372/attachments/original/1495011869/card_reform.jpg?1495011869"
@@ -77,7 +83,9 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13370/attachments/original/1495012048/card_world.jpg?1495012048"
         }),
@@ -86,7 +94,9 @@ function (_Component) {
         },
         hovertext: "Fight for a better world",
         linktext: "International Affairs"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13367/attachments/original/1495014349/card_families.jpg?1495014349"
         }),
@@ -95,7 +105,9 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13367/attachments/original/1495014349/card_families.jpg?1495014349"
         }),
@@ -104,7 +116,9 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13367/attachments/original/1495014349/card_families.jpg?1495014349"
         }),
@@ -113,7 +127,9 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13367/attachments/original/1495014349/card_families.jpg?1495014349"
         }),
@@ -122,7 +138,9 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13367/attachments/original/1495014349/card_families.jpg?1495014349"
         }),
@@ -131,7 +149,9 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13367/attachments/original/1495014349/card_families.jpg?1495014349"
         }),
@@ -140,7 +160,9 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13367/attachments/original/1495014349/card_families.jpg?1495014349"
         }),
@@ -149,7 +171,9 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      }), _react["default"].createElement(_card["default"], {
+      })), _react["default"].createElement("div", {
+        className: _indexModule["default"].item
+      }, _react["default"].createElement(_card["default"], {
         img: _react["default"].createElement(_reactImage["default"], {
           src: "https://d3n8a8pro7vhmx.cloudfront.net/libdems/pages/13367/attachments/original/1495014349/card_families.jpg?1495014349"
         }),
@@ -158,7 +182,7 @@ function (_Component) {
         },
         hovertext: "Fix Our Broken System",
         linktext: "CONSTITUTIONAL & POLITICAL REFORM"
-      })));
+      })))));
     }
   }]);
 
